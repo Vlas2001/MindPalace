@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PloNAxNfzwbPS0g3HP6Jqf1GH4JRqWv5H6bKU0kmBjJeJihLerIyMUru16Kr6jiE1YuERlTU/iE5qoDw+tSbNw==",
+  "dgSpecHash": "AjEZCqnkaIB58szWAFrg+EiRwM0MGcQ09SuIPKAfcyxJXlWzWxAjTfqgt24sa5lGfnWs56JyEx0oYLu7FGkVEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vlask\\RiderProjects\\MindPalace\\MindPalace\\MindPalace.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
     "C:\\Users\\vlask\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\2.2.0\\microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg.sha512",
