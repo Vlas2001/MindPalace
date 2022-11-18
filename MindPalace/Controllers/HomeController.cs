@@ -1,22 +1,16 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MindPalace.Controllers
+namespace MindPalace.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+[Authorize]
+public class HomeController: BaseController
 {
-    [ApiController]
-    [Authorize]
-    public class HomeController : ControllerBase
+    [HttpGet("test")]
+    public IActionResult Test()
     {
-        [HttpGet("data")]
-        [AllowAnonymous]
-        public IActionResult Data()
-        {
-            var weatherForecast = new List<string>()
-            {
-                "Fetch data works",
-            };
-            return Ok(weatherForecast);
-        }
+        return Ok("Ok");
     }
 }

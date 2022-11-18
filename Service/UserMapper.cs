@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Dto;
+using Dto.User;
 using Entity;
 
 namespace Service
@@ -8,7 +9,8 @@ namespace Service
     {
         public UserMapper()
         {
-            CreateMap<User, UserRegisterDto>().ReverseMap();
+            CreateMap<User, SignInModel>().ReverseMap();
+            CreateMap<User, SignUpModel>().ReverseMap();
         }
     }
 }
