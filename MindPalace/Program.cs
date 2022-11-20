@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Converters;
 using Service;
+using Service.MemorizeValues;
+using Service.Statistics;
 using Service.Users;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,8 +19,10 @@ services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
 services.AddScoped<UserService>();
+services.AddScoped<StatisticsService>();
+services.AddScoped<ValuesMemorizeService>();
 
-services.AddAutoMapper(typeof(UserMapper));
+services.AddAutoMapper(typeof(MapperProfile));
 services.AddHttpContextAccessor();
 
 var configuration = builder.Configuration;

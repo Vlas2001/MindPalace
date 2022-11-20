@@ -1,4 +1,5 @@
-﻿using Entity;
+﻿using Dto.MemorizeItem;
+using Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataContext
@@ -6,6 +7,10 @@ namespace DataContext
     public sealed class DataBaseContext: DbContext 
     {
         public DbSet<User> Users { get; set; }
+        
+        public DbSet<Statistics> Statistics { get; set; }
+        
+        public DbSet<MemorizeItem> MemorizeItems { get; set; }
 
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
         {
