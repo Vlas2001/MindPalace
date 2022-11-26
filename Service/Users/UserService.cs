@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -30,7 +31,7 @@ public class UserService
     {
         var user = _mapper.Map<SignUpModel, User>(signUpModel);
         
-        var hashedPassword = PasswordHasher.CalculateHash(signUpModel.Password);
+        var hashedPassword = PasswordHasher.CalculateHash(signUpModel.Password, RandomNumberGenerator.GetBytes(16));
         user.PasswordHash = hashedPassword.HashedPasswordText;
         user.PasswordSalt = hashedPassword.Salt;
 

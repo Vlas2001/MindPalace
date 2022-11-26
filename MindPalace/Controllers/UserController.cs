@@ -1,5 +1,4 @@
-﻿using Dto;
-using Dto.User;
+﻿using Dto.User;
 using Microsoft.AspNetCore.Mvc;
 using Service.Users;
 
