@@ -7,7 +7,7 @@ namespace MindPalace.Controllers;
 
 [ApiController]
 [Route($"api/[controller]")]
-public class UserController : BaseController
+public class UserController : ControllerBase
 {
     private readonly UserService _userService;
 
@@ -16,16 +16,16 @@ public class UserController : BaseController
         _userService = userService;
     }
 
-    [HttpPost("signUp")]
+    [HttpPost("sign-up")]
     public async Task<IActionResult> SignUp(SignUpModel signUpModel)
     {
         await _userService.SignUp(signUpModel);
         return Ok();
     }
 
-    [HttpPost("signIn")]
+    [HttpPost("sign-in")]
     public async Task<IActionResult> SignIn(SignInModel signInModel)
     {
-        return CreateActionResultFromData(await _userService.SignIn(signInModel));
+        return Ok(await _userService.SignIn(signInModel));
     }
 }

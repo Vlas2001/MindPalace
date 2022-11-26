@@ -1,13 +1,15 @@
 ﻿using Dto.Enums;
 using Dto.Statistics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Statistics;
 
 namespace MindPalace.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
-public class StatisticsController: BaseController
+public class StatisticsController: ControllerBase
 {
     private readonly StatisticsService _statistics;
     

@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.MemorizeValues;
 
 namespace MindPalace.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
-public class MemorizeController: BaseController
+public class MemorizeController: ControllerBase
 {
     private readonly ValuesMemorizeService _valuesMemorizeService;
 
