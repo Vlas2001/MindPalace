@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using DataContext;
+using Dto.Enums;
 using Dto.Statistics;
 using Microsoft.EntityFrameworkCore;
-using Shared.Enums;
 
 namespace Service.Statistics;
 
@@ -22,7 +23,11 @@ public class StatisticsService
     
     public async Task<List<StatisticDto>> GetAllStatisticsAsync(Guid userId, StatisticType type)
     {
-        return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.ToListAsync());
+        if (type == StatisticType.All)
+        {
+            return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.Id == userId).ToListAsync());
+        }
+        return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.Id == userId && s.Type == type).ToListAsync());
     }
 
     public async Task AddTestResultAsync(StatisticDto statistic)

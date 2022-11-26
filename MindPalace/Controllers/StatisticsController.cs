@@ -1,7 +1,7 @@
-﻿using Dto.Statistics;
+﻿using Dto.Enums;
+using Dto.Statistics;
 using Microsoft.AspNetCore.Mvc;
 using Service.Statistics;
-using Shared.Enums;
 
 namespace MindPalace.Controllers;
 

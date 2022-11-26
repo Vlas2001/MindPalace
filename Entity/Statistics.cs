@@ -1,5 +1,5 @@
 ﻿using System;
-using Shared.Enums;
+using Dto.Enums;
 
 namespace Entity;
 
@@ -14,4 +14,6 @@ public class Statistics
     public DateTime Time { get; set; }
     
     public int CorrectAnswersPercentage { get; set; }
+    
+    public int CountOfResult { get; set; }
 }

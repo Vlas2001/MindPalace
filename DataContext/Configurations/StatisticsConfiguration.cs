@@ -13,6 +13,6 @@ public class StatisticsConfiguration: IEntityTypeConfiguration<Statistics>
         builder.Property(x => x.Time).IsRequired();
         builder.Property(x => x.Type).IsRequired();
         builder.Property(x => x.CorrectAnswersPercentage).IsRequired();
-
+        builder.Property(x => x.CountOfResult).IsRequired();
     }
 }

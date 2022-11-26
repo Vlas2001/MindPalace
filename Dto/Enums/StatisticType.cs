@@ -1,4 +1,4 @@
-﻿namespace Shared.Enums;
+﻿namespace Dto.Enums;
 
 public enum StatisticType
 {

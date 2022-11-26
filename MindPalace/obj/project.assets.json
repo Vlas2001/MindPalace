@@ -1394,9 +1394,6 @@
       "Dto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Shared": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Dto.dll": {}
         },
@@ -1408,7 +1405,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Shared": "1.0.0"
+          "Dto": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Entity.dll": {}
@@ -1437,16 +1434,6 @@
         },
         "runtime": {
           "bin/placeholder/Service.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -3302,11 +3289,6 @@
       "type": "project",
       "path": "../Service/Service.csproj",
       "msbuildProject": "../Service/Service.csproj"
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3319,7 +3301,6 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.11",
       "Service >= 1.0.0",
-      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3360,9 +3341,6 @@
             },
             "C:\\Users\\vlask\\RiderProjects\\MindPalace\\Service\\Service.csproj": {
               "projectPath": "C:\\Users\\vlask\\RiderProjects\\MindPalace\\Service\\Service.csproj"
-            },
-            "C:\\Users\\vlask\\RiderProjects\\MindPalace\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\vlask\\RiderProjects\\MindPalace\\Shared\\Shared.csproj"
             }
           }
         }
