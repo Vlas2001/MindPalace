@@ -3,6 +3,13 @@ using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
 namespace Service.Users;
 
+internal class HashedPassword
+{
+    public string HashedPasswordText { get; set; }
+
+    public string Salt { get; set; }
+}
+
 internal static class PasswordHasher
 {
     internal static HashedPassword CalculateHash(string passwordText, byte[] salt) 

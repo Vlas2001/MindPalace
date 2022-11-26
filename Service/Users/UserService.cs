@@ -54,9 +54,9 @@ public class UserService
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())    
         };    
         
-        var keyBytes = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
-        var securityKey = new SymmetricSecurityKey(keyBytes);    
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);    
+        var credentials = new SigningCredentials(new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])),
+                SecurityAlgorithms.HmacSha256);    
         
         var token = new JwtSecurityToken(
             _configuration["Jwt:Issuer"],    
