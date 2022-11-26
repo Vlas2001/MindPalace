@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Service.MemorizeValues;
 
-public class MemorizeHelper
+public static class MemorizeHelper
 {
     private static readonly Random Random = new();
     public static List<int> GetRandomIds(int count, int minId, int maxId)

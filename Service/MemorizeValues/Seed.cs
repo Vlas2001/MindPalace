@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using DataContext;
-using Dto.MemorizeItem;
+using Entity;
 
-namespace Service;
+namespace Service.MemorizeValues;
 
 public class Seed
 {

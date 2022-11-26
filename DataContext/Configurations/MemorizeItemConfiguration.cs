@@ -1,4 +1,4 @@
-﻿using Dto.MemorizeItem;
+﻿using Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

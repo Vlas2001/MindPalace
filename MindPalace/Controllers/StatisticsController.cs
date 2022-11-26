@@ -7,7 +7,6 @@ using Service.Statistics;
 namespace MindPalace.Controllers;
 
 [ApiController]
-[Authorize]
 [Route("api/[controller]")]
 public class StatisticsController: ControllerBase
 {

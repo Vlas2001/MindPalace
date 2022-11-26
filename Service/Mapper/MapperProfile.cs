@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
-using Dto;
 using Dto.Statistics;
 using Dto.User;
 using Entity;
 
-namespace Service
+namespace Service.Mapper
 {
     public class MapperProfile: Profile
     {

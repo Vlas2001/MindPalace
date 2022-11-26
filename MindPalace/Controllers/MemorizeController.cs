@@ -5,7 +5,6 @@ using Service.MemorizeValues;
 namespace MindPalace.Controllers;
 
 [ApiController]
-[Authorize]
 [Route("api/[controller]")]
 public class MemorizeController: ControllerBase
 {

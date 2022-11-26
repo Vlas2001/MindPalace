@@ -29,6 +29,6 @@ public class ValuesMemorizeService
 
     public async Task Seed()
     {
-        await Service.Seed.SeedData(_dbContext);
+        await MemorizeValues.Seed.SeedData(_dbContext);
     }
 }

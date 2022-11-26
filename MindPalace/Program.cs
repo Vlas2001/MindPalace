@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Converters;
 using Service;
+using Service.Mapper;
 using Service.MemorizeValues;
 using Service.Statistics;
 using Service.Users;

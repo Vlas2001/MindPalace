@@ -1,5 +1,4 @@
-﻿using Dto.MemorizeItem;
-using Entity;
+﻿using Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataContext

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Dto.MemorizeItem;
+﻿namespace Entity;
 
 public class MemorizeItem
 {

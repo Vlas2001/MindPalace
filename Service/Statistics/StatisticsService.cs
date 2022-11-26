@@ -25,9 +25,9 @@ public class StatisticsService
     {
         if (type == StatisticType.All)
         {
-            return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.Id == userId).ToListAsync());
+            return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.UserId == userId).ToListAsync());
         }
-        return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.Id == userId && s.Type == type).ToListAsync());
+        return _mapper.Map<List<StatisticDto>>(await _dbContext.Statistics.Where(s => s.UserId == userId && s.Type == type).ToListAsync());
     }
 
     public async Task AddTestResultAsync(StatisticDto statistic)
