@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Service.MemorizeValues;
 
 namespace MindPalace.Controllers;
@@ -16,9 +15,9 @@ public class MemorizeController: ControllerBase
     }
 
     [HttpGet("get-words")]
-    public async Task<ActionResult> GetRandomWords(int count)
+    public ActionResult GetRandomWords(int count)
     {
-        return Ok(await _valuesMemorizeService.GetRandomWordsAsync(count));
+        return Ok(_valuesMemorizeService.GetRandomWordsAsync(count));
     }
     
     [HttpGet("get-numbers")]

@@ -1,6 +1,5 @@
 ﻿using Dto.Enums;
 using Dto.Statistics;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Statistics;
 
